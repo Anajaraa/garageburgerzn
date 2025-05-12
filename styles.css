@@ -96,7 +96,7 @@ header {
 }
 .menu {
     display: flex;
-    gap: 8px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -167,6 +167,82 @@ header {
         padding: 10px 20px;
         font-size: 1rem;
     }
+}
+
+/* Estilos para adicionais e observações */
+.additionals-section, .observation-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.additionals-section h3, .observation-section h3 {
+    color: #cc6600;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.additionals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.additional-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.additional-checkbox {
+    accent-color: #cc6600;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.additional-item label {
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#order-observation {
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-family: inherit;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+#order-observation:focus {
+    outline: none;
+    border-color: #cc6600;
+}
+
+.additional-item.cart-item {
+    background: rgba(204, 102, 0, 0.1);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.remove-additional-btn {
+    background: none;
+    border: none;
+    color: #cc6600;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.remove-additional-btn:hover {
+    color: #ff8800;
 }
 
 /* Footer - versão única e simplificada */
@@ -712,19 +788,31 @@ footer {
 }
 
 .menu-image {
-    background: #ffcc66;
+    background: linear-gradient(145deg, #ffcc66, #ff9933);
     border-radius: 50%;
-    padding: 10px;
+    padding: 15px;
     aspect-ratio: 1;
-    margin-bottom: 15px;
-    border: 3px solid #cc6600;
+    margin-bottom: 20px;
+    border: 4px solid #cc6600;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Impede que a imagem ultrapasse o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .menu-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 50%; /* Faz a imagem ficar circular */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .menu-item p {
@@ -911,6 +999,10 @@ footer p {
     border: 4px solid #cc6600;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    overflow: hidden; /* Impede que a imagem ultrapasse o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item:hover .menu-image {
@@ -1289,6 +1381,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -1303,6 +1396,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -1336,6 +1461,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -1672,6 +1807,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -1686,6 +1822,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -1719,6 +1887,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -1863,20 +2041,51 @@ footer p, .footer-content p {
 }
 
 .menu button {
-    min-width: 120px;
+    min-width: 150px;
+    width: 150px;
     padding: 12px 24px;
     font-size: 1.1rem;
-    background: transparent;
-    color: white;
-    border: 2px solid #cc6600;
-    border-radius: 25px;
+    background: #ffcc66;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
     transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 3px 3px 0 black;
+    transform: translateX(-3px) translateY(-3px);
+}
+
+.menu button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    transition: 0.5s ease;
+}
+
+.menu button:hover::before {
+    left: 100%;
 }
 
 .menu button:hover {
     background: #cc6600;
-    transform: translateY(-2px);
+    color: white;
+}
+
+.menu button:active {
+    transform: translateX(0) translateY(0);
+    box-shadow: 0 0 0 black;
 }
 
 @media (max-width: 768px) {
@@ -1916,6 +2125,82 @@ footer p, .footer-content p {
     .menu button {
         width: 100%;
     }
+}
+
+/* Estilos para adicionais e observações */
+.additionals-section, .observation-section {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.additionals-section h3, .observation-section h3 {
+    color: #cc6600;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.additionals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.additional-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.additional-checkbox {
+    accent-color: #cc6600;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.additional-item label {
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+#order-observation {
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+    color: white;
+    font-family: inherit;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+#order-observation:focus {
+    outline: none;
+    border-color: #cc6600;
+}
+
+.additional-item.cart-item {
+    background: rgba(204, 102, 0, 0.1);
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.remove-additional-btn {
+    background: none;
+    border: none;
+    color: #cc6600;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.remove-additional-btn:hover {
+    color: #ff8800;
 }
 /* ... rest of the code ... */        margin: 0 auto;
     }
@@ -2055,6 +2340,10 @@ footer p, .footer-content p {
     border: 4px solid #cc6600;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    overflow: hidden; /* Impede que a imagem ultrapasse o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item:hover .menu-image {
@@ -2433,6 +2722,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -2447,6 +2737,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -2480,6 +2802,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -2816,6 +3148,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -2830,6 +3163,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -2863,6 +3228,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -3136,6 +3511,10 @@ footer p, .footer-content p {
     border: 4px solid #cc6600;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    overflow: hidden; /* Impede que a imagem ultrapasse o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item:hover .menu-image {
@@ -3514,6 +3893,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -3528,6 +3908,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -3561,6 +3973,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -3897,6 +4319,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -3911,6 +4334,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -3944,6 +4399,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -4217,6 +4682,10 @@ footer p, .footer-content p {
     border: 4px solid #cc6600;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    overflow: hidden; /* Impede que a imagem ultrapasse o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item:hover .menu-image {
@@ -4595,6 +5064,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -4609,6 +5079,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -4642,6 +5144,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -4978,6 +5490,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -4992,6 +5505,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -5025,6 +5570,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -5298,6 +5853,10 @@ footer p, .footer-content p {
     border: 4px solid #cc6600;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    overflow: hidden; /* Impede que a imagem ultrapasse o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item:hover .menu-image {
@@ -5676,6 +6235,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -5690,6 +6250,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -5723,6 +6315,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -6059,6 +6661,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -6073,6 +6676,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -6106,6 +6741,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -6379,6 +7024,10 @@ footer p, .footer-content p {
     border: 4px solid #cc6600;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    overflow: hidden; /* Impede que a imagem ultrapasse o círculo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item:hover .menu-image {
@@ -6757,6 +7406,7 @@ footer p, .footer-content p {
     max-height: 100%;
     object-fit: contain;
     transition: transform 0.3s ease;
+    border-radius: 15px;
 }
 
 #menu-items .menu-item:hover .menu-image {
@@ -6771,6 +7421,38 @@ footer p, .footer-content p {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+}
+
+/* Estilos para as abas de categorias */
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.category-tab {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #cc6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.category-tab:hover {
+    background: rgba(204, 102, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+.category-tab.active {
+    background: #cc6600;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Ajustes para responsividade */
@@ -6804,6 +7486,16 @@ footer p, .footer-content p {
     #menu-items .menu-image {
         width: 120px;
         height: 120px;
+    }
+    
+    .category-tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .category-tab {
+        width: 80%;
+        text-align: center;
     }
 }
 
