@@ -5,7 +5,7 @@ const menuItems = [
         name: "THE KIDS",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g e cheddar",	
         price: 14.99,
-        image: "https://img.deliverydireto.com.br/unsafe/origxorig/https://duisktnou8b89.cloudfront.net/img/items/661850c7a2ac8.jpeg",
+        image: "./MENU/tradicional_thekids.jpg",
         category: "artesanais"
     },
     {
@@ -13,7 +13,7 @@ const menuItems = [
         name: "CHEESE SALAD",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, queijo prato, tomate, alface e cebola roxa",	
         price: 18.99,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb39Ld-42Iqc5SRcOCLo_3hPaf5Q6_HyL0kw&s",
+        image: "./MENU/artesanal_ cheesesalada.jpg",
         category: "artesanais"
     },
     {
@@ -21,7 +21,7 @@ const menuItems = [
         name: "CHEESE BACON",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, chedar, bacon e cebola roxa",	
         price: 21.99,
-        image: "https://www.maiorviagem.net/wp-content/uploads/2022/05/Lala-Rock-Doma-House-Cre%CC%81dito-Lipe-Borges-2-2-1024x683.jpg",
+        image: "./MENU/artesanal_cheesebacon.jpg",
         category: "artesanais"
     },
     {
@@ -29,7 +29,7 @@ const menuItems = [
         name: "THE EGG",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, quejo prato, ovo, tomate e cebola roxa",	
         price: 19.99,
-        image: "https://www.maiorviagem.net/wp-content/uploads/2022/05/Classico-Beach-Club-Ipanema_Hamburguer-Du-Chef_credito-Tais-Barros-681x1024.jpg",
+        image: "./MENU/artesanal_cheeseegg.jpg",
         category: "artesanais"
     },
 
@@ -38,7 +38,7 @@ const menuItems = [
         name:"CHEESE CHICKEN",
         description:"Pão de brioche selado na manteita, molho especial, filé de frango, queijo prato e cebola roxa",
         price:18.99,
-        image:"https://cdn.neemo.com.br/uploads/item/photo/2551473/photo1713573761.jpeg.webp",
+        image:"./MENU/artesanal_cheesechiken.jpg",
         category: "artesanais"
     },
     // {
@@ -55,7 +55,7 @@ const menuItems = [
         name:"PEPPERONI",
         description:"Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, fatias de calabresa, catupiry e cebola roxa",	
         price:22.90,
-        image:"https://fontedenoticias.com.br/wp-content/uploads/2024/06/Festival-Burger-Time-2024-goiania-e-aparecida-scaled.jpg",
+        image:"./MENU/artesanal_pepperoni.jpg",
         category: "artesanais"
     },
 
@@ -64,7 +64,7 @@ const menuItems = [
       name:"DOUBLE BURGER",
       description:"Pão de brioche selado na manteiga, molho especial, 2 hamburgueres artesanais de 90g, cheddar e cebola roxa",
       price: 24.99,
-      image:"https://media-cdn.tripadvisor.com/media/photo-s/1b/b6/b2/fb/original-pao-brioche.jpg",
+      image:"./MENU/artesanal_doubleburguer.jpg",
       category: "artesanais"
     },
 
@@ -73,7 +73,7 @@ const menuItems = [
         name:"THE FABULOUS",
         description:"Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 120g, bacon, catupiry, molho sweet chilli e cebola caramelizada",
         price:27.99,
-        image:"https://osaboroso.com.br/wp-content/uploads/2023/09/PAO-BRIOCHEBARBECUEHAMBURGER-ARTESANAL-150-GCEBOLA-CARAMELIZADABACONMAIONESE-VERDE.jpg",
+        image:"./MENU/artesanal_fabulous.jpg",
         category: "artesanais"
     },
 
@@ -82,7 +82,7 @@ const menuItems = [
         name:"PORÇÃO DE BATATA FRITA",
         description:"Porção de batata frita - 300g, com cheddar e bacon.",
         price:21.99,
-        image:"https://img.cybercook.com.br/imagens/receitas/67/batata-frita-com-cheddar-e-bacon.jpg",
+        image:"./MENU/porcaobatatafrita.jpg",
         category: "artesanais"
     },
 
@@ -91,7 +91,7 @@ const menuItems = [
          name:"X-BURGER",
          description:"Pão tradicional, maionese, hambúrguer de 56g, queijo, presunto e batata palha.",
          price:10.00 ,
-         image:"https://static.expressodelivery.com.br/imagens/produtos/336435/180/Expresso-Delivery_293ce72df8c06b68ab11f41d69bfac60.png",
+         image:"./MENU/tradicional_xburguer.jpg",
          category: "tradicionais"
      },
 
@@ -100,7 +100,7 @@ const menuItems = [
          name:"X-SALADA",
          description:"Pão tradicional, maionese, hambúrguer de 56g, queijo, tomate, alface, milho e batata palha.",
          price:13.00 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHky6Ie7gNZW5q6tCmMknnWhmSwhJTmi9t8A&s",
+         image:"./MENU/tradicional_xsalada.jpg",
          category: "tradicionais"
      },
 
@@ -109,7 +109,7 @@ const menuItems = [
          name:"X-EGG",
          description:"Pão tradicional, maionese, hambúrguer de 56g, ovo, tomate, quejo, alface e batata palha.",
          price:14.00 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmQqZnd_5TNdE4qS76HF8JpVPGwECrvcvkqQ&s",
+         image:"./MENU/tradicional_xegg.jpg",
          category: "tradicionais"
      },
 
@@ -118,7 +118,7 @@ const menuItems = [
          name:"X-FRANGO",
          description:"Pão tradicional, maionese, hambúrguer de 56g, frango,  quejo, alface e batata palha.",
          price:16.00 ,
-         image:"https://cardapei.com.br/uploads/images/2023/05/3-1.png",
+         image:"./MENU/tradicional_xfrango.jpg",
          category: "tradicionais"
      },
 
@@ -127,7 +127,7 @@ const menuItems = [
          name:"X-CALABRESA",
          description:"Pão tradicional, maionese, hambúrguer de 56g, calabresa,  cebola roxa e batata palha.",
          price:15.00 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVVrNEi_WC4WOhwRbwvpzUIdsCnuv6JonVAuUG3zoDkjb92xbmkpxGFSr4MLUyyj1gaBQ&usqp=CAU",
+         image:"./MENU/tradicional_xcalabresa.jpg",
          category: "tradicionais"
      },
 
@@ -136,7 +136,7 @@ const menuItems = [
          name:"X-BACON",
          description:"Pão tradicional, maionese, hambúrguer de 56g, bacon, queijo, cebola roxa e batata palha.",
          price:17.00 ,
-         image:"https://hamburguer.zapdeliveries.com.br/_core/_uploads/165/2023/11/1225081123iae4gf86ei.jpg",
+         image:"./MENU/tradicional_xbacon.jpg",
          category: "tradicionais"
      },
 
@@ -145,7 +145,7 @@ const menuItems = [
          name:"CALAFRANGO",
          description:"Filé de frango, calabresa, queijo, milho, alface, cebola roxa e batata palha.",
          price:18.00 ,
-         image:"https://classiclanches.com.br/wp-content/uploads/2023/08/X-FRANGO-CALABRESA.png",
+         image:"./MENU/tradicional_xcalafrango.jpg",
          category: "tradicionais"
      },
 
@@ -155,7 +155,7 @@ const menuItems = [
          name:"COMBO 1",
          description:"3 X-Burguer tradicional + batata frita 150g.",
          price:29.90 ,
-         image:"https://storage.googleapis.com/prod-cardapio-web/uploads/item/image/1049334/822d2bbdWhatsApp_Image_2024-08-13_at_14.01.08__1_.jpeg",
+         image:"./MENU/combo_1.jpg",
          category: "combos"
      },
 
@@ -165,18 +165,26 @@ const menuItems = [
          name:"COMBO 2",
          description:"4 X-Burguer tradicional + batata frita 150g.",
          price:38.90 ,
-         image:"https://storage.googleapis.com/prod-cardapio-web/uploads/item/image/1180811/d00327fdWhatsApp_Image_2024-08-13_at_14.06.40__1_.jpeg",
+         image:"./MENU/combo_2.jpg",
          category: "combos"
      },
 
     
-     
+     {
+         id:19,
+         name:"COMBO 3",
+         description:"3 X-Salada tradicional + batata frita 150g.",
+         price:42.90 ,
+         image:"./MENU/combo_3.jpg",
+         category: "combos"
+     }, 
+
       {
          id:20,
          name:"COMBO 4",
          description:"4 X-Salada tradicional + batata frita 150g.",
          price:54.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"./MENU/combo_4.jpg",
          category: "combos"
      },
 
@@ -185,7 +193,7 @@ const menuItems = [
          name:"COMBO 5",
          description:"3 X-Calabresa tradicional + batata frita 150g.",
          price:47.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"./MENU/combo_5.jpg",
          category: "combos"
      },
 
@@ -194,7 +202,7 @@ const menuItems = [
          name:"COMBO 6",
          description:"4 X-Calabresa tradicional + batata frita 150g.",
          price:61.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"/MENU/combo_6.jpg",
          category: "combos"
      },
 
@@ -203,7 +211,7 @@ const menuItems = [
          name:"COMBO 7",
          description:"2 X-Salada tradicional + batata frita 150g +1 Guarana Antarctica 1L.",
          price:38.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"./MENU/combo_7.jpg",
          category: "combos"
      },
 
@@ -212,25 +220,17 @@ const menuItems = [
          name:"COMBO 8",
          description:"3 X-Bacon tradicional + batata frita 150g.",
          price:54.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"./MENU/combo_8.jpg",
          category: "combos"
      },
 
-      {
-         id:24,
-         name:"COMBO 8",
-         description:"3 X-Bacon tradicional + batata frita 150g.",
-         price:54.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
-         category: "combos"
-     },
      
         {
          id:25,
          name:"COMBO 9",
          description:"4 X-Bacon tradicional + batata frita 150g.",
          price:69.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"./MENU/combo_9.jpg",    
          category: "combos"
      },
 
@@ -239,7 +239,7 @@ const menuItems = [
          name:"COMBO 10",
          description:"3 X-Egg tradicional + batata frita 150g.",
          price:45.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"./MENU/combo_10.jpg",
          category: "combos"
      },
 
@@ -248,43 +248,17 @@ const menuItems = [
          name:"COMBO 11",
          description:"4 X-Egg tradicional + batata frita 150g.",
          price:59.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"./MENU/combo_11.jpg",
          category: "combos"
      },
 
-     {
-         id:28,
-         name:"COMBO BACON",
-         description:"Hamburguer artesanal.",
-         price:21.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
-         category: "combos"
-     },
-
-     {
-         id:29,
-         name:"COMBO SALADÃO",
-         description:"Hamburguer artesanal.",
-         price:19.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
-         category: "combos"
-     },
-
-     {
-         id:30,
-         name:"COMBO CALAFRANGO",
-         description:"Batata frita 150g + refrigerante lata.",
-         price:28.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
-         category: "combos"
-     },
-
+     
          {
          id:31,
          name:"SUPER COMBO",
          description:"8 X-Salada + Fritas c/ cheddar e bacon + Refrigerante 2L.",
          price:119.90 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4XbnOHuleAUKbxw-gPIXIUNxhk68TsriXMA&s",
+         image:"./MENU/combo_12.jpg",
          category: "combos"
      },
 
@@ -308,10 +282,10 @@ const menuItems = [
 
      {
          id:34,
-         name:"SUCO ",
+         name:"PETRA",
          description:"Lata 350ml.",
          price:6.00 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzmBCK0B_UVR848_7KaKTG071mRXnaKJMGTA&s",
+         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGqPG0RPN8XgNfU1ynG6cyJi_VDhnxD-U97A&s",
          category: "bebidas"
      },
     
@@ -320,7 +294,7 @@ const menuItems = [
          name:"COCA-COLA ",
          description:"Lata 350ml.",
          price:6.00 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2Eket6jPD5X4rzzTjaP84cahTFglImT6O0Q&s",
+         image:"https://prezunic.vtexassets.com/arquivos/ids/210693/66db573a62edc14e790f8550.jpg?v=638612475473130000",
          category: "bebidas"
      },
      
@@ -330,7 +304,7 @@ const menuItems = [
          name:"GUARANA ",
          description:"Lata 350ml.",
          price:6.00 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8s_OnUpTjIZ2CgTkEwEzhEzD7yb2PugOf4g&s",
+         image:"https://www.auau.com.br/image/cache/data/up_system/product-13804/guarana[-1000x1000.jpg",
          category: "bebidas"
      },
 ];
