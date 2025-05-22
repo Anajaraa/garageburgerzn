@@ -12,7 +12,7 @@ const menuItems = [
         id: 2,
         name: "CHEESE SALAD",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, queijo prato, tomate, alface e cebola roxa",	
-        price: 18.99,
+        price: 19.99,
         image: "./MENU/artesanal_ cheesesalada.jpg",
         category: "artesanais"
     },
@@ -27,8 +27,8 @@ const menuItems = [
     {
         id: 4,
         name: "THE EGG",
-        description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, quejo prato, ovo, tomate e cebola roxa",	
-        price: 19.99,
+        description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, quejo prato, ovo, tomate, alface e cebola roxa",	
+        price: 20.99,
         image: "./MENU/artesanal_cheeseegg.jpg",
         category: "artesanais"
     },
@@ -36,7 +36,7 @@ const menuItems = [
     {
         id:5,
         name:"CHEESE CHICKEN",
-        description:"Pão de brioche selado na manteita, molho especial, filé de frango, queijo prato e cebola roxa",
+        description:"Pão de brioche selado na manteita, molho especial, filé de frango, queijo prato, alface, tomate e cebola roxa",
         price:18.99,
         image:"./MENU/artesanal_cheesechiken.jpg",
         category: "artesanais"
@@ -307,6 +307,64 @@ const menuItems = [
          image:"https://www.auau.com.br/image/cache/data/up_system/product-13804/guarana[-1000x1000.jpg",
          category: "bebidas"
      },
+
+         {
+         id:37,
+         name:"SUCO DEL VALLE ",
+         description:"Lata 350ml.",
+         price:6.00 ,
+         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4z06GSZRZVsvjFi-AcmHqCQooQWKNe7yqA&s",
+         category: "bebidas"
+     },
+
+      {
+         id:38,
+         name:"GUARAVITON ",
+         description:"Garrafa.",
+         price:4.00 ,
+         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4z06GSZRZVsvjFi-AcmHqCQooQWKNe7yqA&s",
+         category: "bebidas"
+     },
+
+      
+     
+      {
+         id:40,
+         name:"COCA-COLA ",
+         description:"600 ml.",
+         price:9.00 ,
+         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQR9jjBtQmfkqujiIMRW4c4JpT5xA_TXe_6rw&s",
+         category: "bebidas"
+     },
+
+      {
+         id:41,
+         name:"COCA-COLA ",
+         description:"2L.",
+         price:17.00 ,
+         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmUY24IbiUHxAsuPhtcQzS86fiTLG4PahNQ&s",
+         category: "bebidas"
+     },
+
+      {
+         id:42,
+         name:"ITAIBUNA",
+         description:"2L.",
+         price:10.00 ,
+         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R2YIbuJYDNS_A9pmWhAJPtQq0fFYStJEzw&s",
+         category: "bebidas"
+     },
+
+
+     {
+         id:43,
+         name:"DOLLY",
+         description:"2L.",
+         price:9.00 ,
+         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vg57W1XoHVsECyegTjmN_2RWl_PQ7AMwyA&s",
+         category: "bebidas"
+     },
+
 ];
 
 // Cart array to store selected items
