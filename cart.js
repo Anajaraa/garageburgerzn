@@ -320,9 +320,9 @@ const menuItems = [
       {
          id:38,
          name:"GUARAVITON ",
-         description:"Garrafa.",
+         description:"Garrafa 500ml.",
          price:4.00 ,
-         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4z06GSZRZVsvjFi-AcmHqCQooQWKNe7yqA&s",
+         image:"https://destro.fbitsstatic.net/img/p/bebida-guaraviton-sabor-acai-500ml-86699/273696.jpg?w=500&h=500&v=202501231555&qs=ignore",
          category: "bebidas"
      },
 
