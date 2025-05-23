@@ -748,10 +748,10 @@ function updateCartModal() {
                 <p class="cart-item-price">R$ ${item.price.toFixed(2)}</p>
             </div>
             <div class="cart-item-quantity">
-                <button class="quantity-btn decrease" data-index="${index}">-</button>
+                <button class="quantity-btn decrease" data-id="${item.id}">-</button>
                 <span>${item.quantity}</span>
-                <button class="quantity-btn increase" data-index="${index}">+</button>
-                <button class="remove-btn" data-index="${index}">
+                <button class="quantity-btn increase" data-id="${item.id}">+</button>
+                <button class="remove-btn" data-id="${item.id}">
                     <i class="fas fa-trash"></i>
                 </button>
             </div>
