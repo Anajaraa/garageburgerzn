@@ -20,7 +20,7 @@ const menuItems = [
         id: 3,
         name: "CHEESE BACON",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, chedar, bacon e cebola roxa",	
-        price: 21.99,
+        price: 22.99,
         image: "./MENU/artesanal_cheesebacon.jpg",
         category: "artesanais"
     },
@@ -36,7 +36,7 @@ const menuItems = [
     {
         id:5,
         name:"CHEESE CHICKEN",
-        description:"Pão de brioche selado na manteita, molho especial, filé de frango, queijo prato, alface, tomate e cebola roxa",
+        description:"Pão de brioche selado na manteiga, molho especial, filé de frango, queijo prato, alface, tomate e cebola roxa",
         price:18.99,
         image:"./MENU/artesanal_cheesechiken.jpg",
         category: "artesanais"
@@ -54,7 +54,7 @@ const menuItems = [
         id:6,
         name:"PEPPERONI",
         description:"Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, fatias de calabresa, catupiry e cebola roxa",	
-        price:22.90,
+        price:22.99,
         image:"./MENU/artesanal_pepperoni.jpg",
         category: "artesanais"
     },
@@ -164,7 +164,7 @@ const menuItems = [
          id:18,
          name:"COMBO 2",
          description:"4 X-Burguer tradicional + batata frita 150g.",
-         price:38.90 ,
+         price:39.90 ,
          image:"./MENU/combo_2.jpg",
          category: "combos"
      },
