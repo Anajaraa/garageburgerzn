@@ -71,7 +71,7 @@ O site é totalmente responsivo e otimizado para:
 
 ## 🚀 Melhorias Futuras
 
-- Adicionar sistema de pedidos online
+- Adicionar sistema de pedidos online (esse já foi adicionado)
 - Implementar seção de avaliações dos clientes
 - Adicionar galeria de imagens
 - Criar seção de blog para novidades
