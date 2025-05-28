@@ -202,7 +202,7 @@ const menuItems = [
          name:"COMBO 6",
          description:"4 X-Calabresa tradicional + batata frita 150g.",
          price:61.90 ,
-         image:"/MENU/combo_6.jpg",
+         image:"./MENU/combo_6.jpg",
          category: "combos"
      },
 
