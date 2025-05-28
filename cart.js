@@ -149,6 +149,16 @@ const menuItems = [
          category: "tradicionais"
      },
 
+       {
+         id:44,
+         name:"X-TUDO",
+         description:"Hambúrguer tradicional, maionese, alface,  tomate, milho, queijo prato, presunto, ovo, filé de frango, bacon, fatias de calabresa, batata palha.",
+         price:29.99 ,
+         image:"./MENU/XTUDO.png",
+         category: "tradicionais"
+     },
+
+
 
       {
          id:17,
