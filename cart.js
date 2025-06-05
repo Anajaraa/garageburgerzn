@@ -375,6 +375,100 @@ const menuItems = [
          category: "bebidas"
      },
 
+      {
+         id:44,
+         name:"Hamburguer Artesanal",
+         description:"",
+         price:5.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+         {
+         id:45,
+         name:"Hamburguer Tradicional",
+         description:"",
+         price:2.50 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+         {
+         id:46,
+         name:"Queijo",
+         description:"",
+         price:2.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+     
+         {
+         id:47,
+         name:"Bacon",
+         description:"",
+         price:4.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+        {
+         id:48,
+         name:"Batata Frita",
+         description:"",
+         price:7.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+        {
+         id:49,
+         name:"Pasta de Alho Pequeno",
+         description:"",
+         price:4.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+        {
+         id:50,
+         name:"Catupiry",
+         description:"",
+         price:4.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+        {
+         id:51,
+         name:"Cheddar",
+         description:"",
+         price:4.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+        {
+         id:52,
+         name:"Calabresa",
+         description:"",
+         price:3.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+        {
+         id:53,
+         name:"Onion Rings",
+         description:"",
+         price:3.00 ,
+         image:"./MENU/add.png",
+         category: "adicionais"
+     },
+
+
+     
+
 ];
 
 // Cart array to store selected items
@@ -791,21 +885,9 @@ function updateCartModal() {
         total += additional.price;
     });
     
-    // Adiciona a seção de adicionais
-    const additionalsSection = document.createElement('div');
-    additionalsSection.className = 'additionals-section';
-    additionalsSection.innerHTML = `
-        <h3>Adicionais</h3>
-        <div class="additionals-grid">
-            ${additionalItems.map(item => `
-                <div class="additional-item">
-                    <input type="checkbox" id="${item.id}" class="additional-checkbox" data-name="${item.name}" data-price="${item.price}">
-                    <label for="${item.id}">${item.name} - R$ ${item.price.toFixed(2)}</label>
-                </div>
-            `).join('')}
-        </div>
-    `;
-    cartItemsContainer.appendChild(additionalsSection);
+    // ... existing code ...
+    // Removido o bloco de checkboxes de adicionais do carrinho
+    // ... existing code ...
     
     // Adiciona o campo de observação
     const observationSection = document.createElement('div');
