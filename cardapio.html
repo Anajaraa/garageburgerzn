@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage's Burguer - Cardápio</title>
+    <link rel="icon" type="image/x-icon" href="iconc.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="LOGO.png" alt="Logo" class="logo">
+            <span class="brand-name">Garage's Burguer</span>
+        </div>
+        <div class="menu">
+            <button onclick="location.href='index.html'">Home</button>
+            <button onclick="location.href='contact.html'">Contato</button>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="pagina">
+        <main class="menu-page">
+            <h1>CARDÁPIO</h1>
+            
+            <!-- Adicione isso logo após o h1 "CARDÁPIO" -->
+            <div class="category-tabs">
+                <button class="category-tab active" data-category="all">Todos</button>
+                <button class="category-tab" data-category="artesanais">Artesanais</button>
+                <button class="category-tab" data-category="tradicionais">Tradicionais</button>
+                <button class="category-tab" data-category="combos">Combos</button>
+                <button class="category-tab" data-category="bebidas">Bebidas</button>
+                <button class="category-tab" data-category="adicionais">Adicionais</button>
+            </div>
+            
+            <div class="menu-grid" id="menu-items">
+                <!-- Menu items will be loaded here via JavaScript -->
+            </div>
+        </main>
+
+        <!-- Cart Modal -->
+        <div class="cart-modal" id="cart-modal">
+            <div class="cart-content">
+                <div class="cart-header">
+                    <h2>Seu Pedido</h2>
+                    <button id="close-cart"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be added here -->
+                </div>
+                <div class="cart-total">
+                    <p>Total: R$ <span id="cart-total">0.00</span></p>
+                </div>
+                <div class="payment-methods">
+                    <h3>Forma de Pagamento</h3>
+                    <div class="payment-options">
+                        <label>
+                            <input type="radio" name="payment" value="pix" checked> PIX
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="card"> Cartão (na entrega)
+                        </label>
+                        <label>
+                            <input type="radio" name="payment" value="cash"> Dinheiro (na entrega)
+                        </label>
+                    </div>
+                    <div id="change-container" style="display: none;">
+                        <label for="change-amount">Troco para: R$</label>
+                        <input type="number" id="change-amount" min="0" step="0.01">
+                    </div>
+                </div>
+                <div class="customer-info">
+                    <h3>Seus Dados</h3>
+                    <input type="text" id="customer-name" placeholder="Seu nome" required>
+                    <input type="text" id="customer-address" placeholder="Endereço de entrega" required>
+                    <input type="tel" id="customer-phone" placeholder="Seu WhatsApp" required>
+                </div>
+                <button id="checkout-btn" class="checkout-btn">Finalizar Pedido</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Garage's Burguer - Desenvolvido por <a href="dev.anajaraml@gmail.com">Anajara Lucas</a></p>
+        </footer>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
