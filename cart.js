@@ -465,6 +465,14 @@ const menuItems = [
          image:"./MENU/add.png",
          category: "adicionais"
      },
+  {
+      id: 54,
+      name:"DOUBLE BURGER BACON",
+      description:"Pão de brioche selado na manteiga, molho especial, 2 hamburgueres artesanais de 90g, cheddar,cebola roxa e bacon",
+      price: 32.99,
+      image:"./MENU/dbbacon.png",
+      category: "artesanais"
+    },
 
 
      
