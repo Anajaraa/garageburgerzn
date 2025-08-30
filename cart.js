@@ -475,7 +475,14 @@ const menuItems = [
     },
 
 
-     
+      {
+      id: 57,
+      name:"Molho de Bacon",
+      description:"",
+      price: 4.0,
+      image:"./MENU/add.png",
+      category: "artesanais"
+    },
 
 ];
 
