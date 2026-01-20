@@ -370,7 +370,7 @@ const menuItems = [
          id:43,
          name:"DOLLY",
          description:"2L.",
-         price:10.00 ,
+         price:9.00 ,
          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vg57W1XoHVsECyegTjmN_2RWl_PQ7AMwyA&s",
          category: "bebidas"
      },

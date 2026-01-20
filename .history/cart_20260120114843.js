@@ -304,17 +304,17 @@ const menuItems = [
          name:"COCA-COLA ",
          description:"Lata 350ml.",
          price:6.50 ,
-         image:"https://prezunic.vtexassets.com/arquivos/ids/210693/66db573a62edc14e790f8550.jpg?v=638612475473130000",
+         image:"https://bigbatata.com.br/tecsoftware/conteudo/uploads/2021/02/Antarctica-Guarana-330ml.jpg",
          category: "bebidas"
      },
      
 
-     {
+      {
          id:36,
          name:"GUARANA ",
          description:"Lata 350ml.",
          price:6.00 ,
-         image:"https://centralmaxsupermercados.com.br/imagens_site/7891991000826.jpg",
+         image:"https://www.auau.com.br/image/cache/data/up_system/product-13804/guarana[-1000x1000.jpg",
          category: "bebidas"
      },
 
@@ -370,7 +370,7 @@ const menuItems = [
          id:43,
          name:"DOLLY",
          description:"2L.",
-         price:10.00 ,
+         price:9.00 ,
          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vg57W1XoHVsECyegTjmN_2RWl_PQ7AMwyA&s",
          category: "bebidas"
      },

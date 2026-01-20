@@ -309,12 +309,12 @@ const menuItems = [
      },
      
 
-     {
+      {
          id:36,
          name:"GUARANA ",
          description:"Lata 350ml.",
          price:6.00 ,
-         image:"https://centralmaxsupermercados.com.br/imagens_site/7891991000826.jpg",
+         image:"https://www.auau.com.br/image/cache/data/up_system/product-13804/guarana[-1000x1000.jpg",
          category: "bebidas"
      },
 
@@ -370,7 +370,7 @@ const menuItems = [
          id:43,
          name:"DOLLY",
          description:"2L.",
-         price:10.00 ,
+         price:9.00 ,
          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vg57W1XoHVsECyegTjmN_2RWl_PQ7AMwyA&s",
          category: "bebidas"
      },

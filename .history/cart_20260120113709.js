@@ -12,7 +12,7 @@ const menuItems = [
         id: 2,
         name: "CHEESE SALAD",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, queijo prato, tomate, alface e cebola roxa",	
-        price: 20.99,
+        price: 19.99,
         image: "./MENU/artesanal_ cheesesalada.jpg",
         category: "artesanais"
     },
@@ -20,7 +20,7 @@ const menuItems = [
         id: 3,
         name: "CHEESE BACON",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, chedar, bacon e cebola roxa",	
-        price: 24.99,
+        price: 22.99,
         image: "./MENU/artesanal_cheesebacon.jpg",
         category: "artesanais"
     },
@@ -28,7 +28,7 @@ const menuItems = [
         id: 4,
         name: "THE EGG",
         description: "Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 90g, quejo prato, ovo, tomate, alface e cebola roxa",	
-        price: 22.99,
+        price: 20.99,
         image: "./MENU/artesanal_cheeseegg.jpg",
         category: "artesanais"
     },
@@ -63,7 +63,7 @@ const menuItems = [
       id: 7,
       name:"DOUBLE BURGER",
       description:"Pão de brioche selado na manteiga, molho especial, 2 hamburgueres artesanais de 90g, cheddar e cebola roxa",
-      price: 26.99,
+      price: 24.99,
       image:"./MENU/artesanal_doubleburguer.jpg",
       category: "artesanais"
     },
@@ -72,7 +72,7 @@ const menuItems = [
         id:8,
         name:"THE FABULOUS",
         description:"Pão de brioche selado na manteiga, molho especial, hambúrguer artesanal de 120g, bacon, catupiry, molho sweet chilli e cebola caramelizada",
-        price:28.99,
+        price:27.99,
         image:"./MENU/artesanal_fabulous.jpg",
         category: "artesanais"
     },
@@ -164,7 +164,7 @@ const menuItems = [
          id:17,
          name:"COMBO 1",
          description:"3 X-Burguer tradicional + batata frita 150g.",
-         price:36.90 ,
+         price:29.90 ,
          image:"./MENU/combo_1.jpg",
          category: "combos"
      },
@@ -174,7 +174,7 @@ const menuItems = [
          id:18,
          name:"COMBO 2",
          description:"4 X-Burguer tradicional + batata frita 150g.",
-         price:48.90 ,
+         price:41.90 ,
          image:"./MENU/combo_2.jpg",
          category: "combos"
      },
@@ -193,7 +193,7 @@ const menuItems = [
          id:20,
          name:"COMBO 4",
          description:"4 X-Salada tradicional + batata frita 150g.",
-         price:56.90 ,
+         price:54.90 ,
          image:"./MENU/combo_4.jpg",
          category: "combos"
      },
@@ -202,7 +202,7 @@ const menuItems = [
          id:21,
          name:"COMBO 5",
          description:"3 X-Calabresa tradicional + batata frita 150g.",
-         price:51.90 ,
+         price:47.90 ,
          image:"./MENU/combo_5.jpg",
          category: "combos"
      },
@@ -211,7 +211,7 @@ const menuItems = [
          id:22,
          name:"COMBO 6",
          description:"4 X-Calabresa tradicional + batata frita 150g.",
-         price:68.90 ,
+         price:61.90 ,
          image:"./MENU/combo_6.jpg",
          category: "combos"
      },
@@ -220,7 +220,7 @@ const menuItems = [
          id:23,
          name:"COMBO 7",
          description:"2 X-Salada tradicional + batata frita 150g +1 Guarana Antarctica 1L.",
-         price:39.90 ,
+         price:38.90 ,
          image:"./MENU/combo_7.jpg",
          category: "combos"
      },
@@ -229,7 +229,7 @@ const menuItems = [
          id:24,
          name:"COMBO 8",
          description:"3 X-Bacon tradicional + batata frita 150g.",
-         price:57.90 ,
+         price:54.90 ,
          image:"./MENU/combo_8.jpg",
          category: "combos"
      },
@@ -239,7 +239,7 @@ const menuItems = [
          id:25,
          name:"COMBO 9",
          description:"4 X-Bacon tradicional + batata frita 150g.",
-         price:76.90 ,
+         price:69.90 ,
          image:"./MENU/combo_9.jpg",    
          category: "combos"
      },
@@ -248,7 +248,7 @@ const menuItems = [
          id:26,
          name:"COMBO 10",
          description:"3 X-Egg tradicional + batata frita 150g.",
-         price:48.90 ,
+         price:45.90 ,
          image:"./MENU/combo_10.jpg",
          category: "combos"
      },
@@ -257,7 +257,7 @@ const menuItems = [
          id:27,
          name:"COMBO 11",
          description:"4 X-Egg tradicional + batata frita 150g.",
-         price:64.90 ,
+         price:59.90 ,
          image:"./MENU/combo_11.jpg",
          category: "combos"
      },
@@ -290,31 +290,31 @@ const menuItems = [
          category: "bebidas"
      },
 
-     
-    {
+     {
          id:34,
-         name:"GUARANÁ ANTARCTICA ",
-         description:"1L.",
-         price:9.00 ,
-         image:"https://deskontao.agilecdn.com.br/3323_1.jpg?v=17-1681752696",
+         name:"PETRA",
+         description:"Lata 350ml.",
+         price:6.00 ,
+         image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGqPG0RPN8XgNfU1ynG6cyJi_VDhnxD-U97A&s",
          category: "bebidas"
      },
+    
       {
          id:35,
          name:"COCA-COLA ",
          description:"Lata 350ml.",
-         price:6.50 ,
+         price:6.00 ,
          image:"https://prezunic.vtexassets.com/arquivos/ids/210693/66db573a62edc14e790f8550.jpg?v=638612475473130000",
          category: "bebidas"
      },
      
 
-     {
+      {
          id:36,
          name:"GUARANA ",
          description:"Lata 350ml.",
          price:6.00 ,
-         image:"https://centralmaxsupermercados.com.br/imagens_site/7891991000826.jpg",
+         image:"https://www.auau.com.br/image/cache/data/up_system/product-13804/guarana[-1000x1000.jpg",
          category: "bebidas"
      },
 
@@ -351,14 +351,14 @@ const menuItems = [
          id:41,
          name:"COCA-COLA ",
          description:"2L.",
-         price:18.00 ,
+         price:17.00 ,
          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmUY24IbiUHxAsuPhtcQzS86fiTLG4PahNQ&s",
          category: "bebidas"
      },
 
       {
          id:42,
-         name:"TUBAINA",
+         name:"ITAIBUNA",
          description:"2L.",
          price:10.00 ,
          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7R2YIbuJYDNS_A9pmWhAJPtQq0fFYStJEzw&s",
@@ -370,7 +370,7 @@ const menuItems = [
          id:43,
          name:"DOLLY",
          description:"2L.",
-         price:10.00 ,
+         price:9.00 ,
          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vg57W1XoHVsECyegTjmN_2RWl_PQ7AMwyA&s",
          category: "bebidas"
      },

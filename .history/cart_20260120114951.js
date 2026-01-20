@@ -296,9 +296,11 @@ const menuItems = [
          name:"GUARANÁ ANTARCTICA ",
          description:"1L.",
          price:9.00 ,
-         image:"https://deskontao.agilecdn.com.br/3323_1.jpg?v=17-1681752696",
+         image:"https://fortatacadista.vteximg.com.br/arquivos/ids/309373-800-800/7891991000826--2-.jpg?v=638537348216270000",
          category: "bebidas"
      },
+
+     
       {
          id:35,
          name:"COCA-COLA ",
@@ -309,12 +311,12 @@ const menuItems = [
      },
      
 
-     {
+      {
          id:36,
          name:"GUARANA ",
          description:"Lata 350ml.",
          price:6.00 ,
-         image:"https://centralmaxsupermercados.com.br/imagens_site/7891991000826.jpg",
+         image:"https://www.auau.com.br/image/cache/data/up_system/product-13804/guarana[-1000x1000.jpg",
          category: "bebidas"
      },
 
@@ -370,7 +372,7 @@ const menuItems = [
          id:43,
          name:"DOLLY",
          description:"2L.",
-         price:10.00 ,
+         price:9.00 ,
          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_vg57W1XoHVsECyegTjmN_2RWl_PQ7AMwyA&s",
          category: "bebidas"
      },
