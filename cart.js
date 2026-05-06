@@ -295,7 +295,7 @@ const menuItems = [
          id:34,
          name:"GUARANÁ ANTARCTICA ",
          description:"1L.",
-         price:9.00 ,
+         price:10.00 ,
          image:"https://deskontao.agilecdn.com.br/3323_1.jpg?v=17-1681752696",
          category: "bebidas"
      },
@@ -322,19 +322,19 @@ const menuItems = [
          id:37,
          name:"SUCO DEL VALLE ",
          description:"Lata 290ml.",
-         price:6.00 ,
+         price:7.00 ,
          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4z06GSZRZVsvjFi-AcmHqCQooQWKNe7yqA&s",
          category: "bebidas"
      },
 
-      {
-         id:38,
-         name:"GUARAVITON ",
-         description:"Garrafa 500ml.",
-         price:5.00 ,
-         image:"https://destro.fbitsstatic.net/img/p/bebida-guaraviton-sabor-acai-500ml-86699/273696.jpg?w=500&h=500&v=202501231555&qs=ignore",
-         category: "bebidas"
-     },
+    //   {
+    //      id:38,
+    //      name:"GUARAVITON ",
+    //      description:"Garrafa 500ml.",
+    //      price:5.00 ,
+    //      image:"https://destro.fbitsstatic.net/img/p/bebida-guaraviton-sabor-acai-500ml-86699/273696.jpg?w=500&h=500&v=202501231555&qs=ignore",
+    //      category: "bebidas"
+    //  },
 
       
      
@@ -379,7 +379,7 @@ const menuItems = [
          id:44,
          name:"Hamburguer Artesanal",
          description:"",
-         price:5.50 ,
+         price:6.00 ,
          image:"./MENU/add.png",
          category: "adicionais"
      },
@@ -388,7 +388,7 @@ const menuItems = [
          id:45,
          name:"Hamburguer Tradicional",
          description:"",
-         price:2.50 ,
+         price:3.00 ,
          image:"./MENU/add.png",
          category: "adicionais"
      },
@@ -407,7 +407,7 @@ const menuItems = [
          id:47,
          name:"Bacon",
          description:"",
-         price:4.00 ,
+         price:5.00 ,
          image:"./MENU/add.png",
          category: "adicionais"
      },
@@ -425,7 +425,7 @@ const menuItems = [
          id:49,
          name:"Pasta de Alho Pequeno",
          description:"",
-         price:4.00 ,
+         price:5.00 ,
          image:"./MENU/add.png",
          category: "adicionais"
      },
@@ -434,7 +434,7 @@ const menuItems = [
          id:50,
          name:"Catupiry",
          description:"",
-         price:4.00 ,
+         price:5.00 ,
          image:"./MENU/add.png",
          category: "adicionais"
      },
@@ -452,7 +452,7 @@ const menuItems = [
          id:52,
          name:"Calabresa",
          description:"",
-         price:3.00 ,
+         price:4.00 ,
          image:"./MENU/add.png",
          category: "adicionais"
      },
